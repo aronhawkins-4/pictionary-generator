@@ -60,9 +60,9 @@ export const Timer = () => {
 					</CountdownCircleTimer>
 					<div>
 						<div className='text-lg text-center mb-1'>Time (s)</div>
-						<div className='flex items-center bg-gray-50 border text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full :bg-gray-700 border-gray-600 :placeholder-gray-400 :text-white :focus:ring-blue-500 :focus:border-blue-500 appearance-none text-center overflow-hidden'>
+						<div className='flex items-center border text-sm rounded-lg w-full bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 appearance-none text-center overflow-hidden'>
 							<div
-								className='flex justify-center items-center p-2 hover:bg-gray-800/50'
+								className='flex justify-center items-center p-2 text-white hover:bg-gray-800/50'
 								onClick={() => {
 									setStartTime((current) => {
 										if (current !== 1) {
@@ -80,7 +80,7 @@ export const Timer = () => {
 									type='text'
 									inputMode='numeric'
 									id='default-input'
-									className='bg-gray-50 border-x border-gray-300 text-sm rounded-none   block w-16 p-2.5 :bg-gray-700 :border-gray-600 :placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 appearance-none text-center'
+									className='border-x text-sm rounded-none block w-16 p-2.5 bg-gray-700 border-gray-600 :placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 appearance-none text-center'
 									onChange={(event) => {
 										setStartTime(Number(event.target.value));
 									}}
@@ -88,7 +88,7 @@ export const Timer = () => {
 								/>
 							</div>
 							<div
-								className='flex justify-center items-center p-2 hover:bg-gray-800/50'
+								className='flex justify-center items-center p-2 text-white hover:bg-gray-800/50'
 								onClick={() => {
 									setStartTime((current) => {
 										return current + 1;
@@ -102,12 +102,12 @@ export const Timer = () => {
 					</div>
 
 					<div
-						className='inline-flex rounded-none shadow-sm w-full bg-white border-t border-b border-gray-200 :bg-gray-700 :border-gray-600 :text-white'
+						className='inline-flex rounded-none shadow-sm w-full border-t border-b bg-gray-700 border-gray-600 text-white'
 						role='group'
 					>
 						<button
 							type='button'
-							className='w-full flex justify-center items-center px-4 py-2 focus:z-10 focus:ring-2  text-white hover:text-white hover:bg-gray-600 focus:ring-blue-500 focus:text-white border-r border-gray-600'
+							className='w-full flex justify-center items-center px-4 py-2 focus:z-10 focus:ring-2 bg-gray-800 text-white hover:text-white hover:bg-gray-600 focus:ring-blue-500 focus:text-white border-r border-gray-600'
 							onClick={() => {
 								if (timeLeft !== 0) {
 									setIsPlaying((current) => {
@@ -123,7 +123,7 @@ export const Timer = () => {
 							{isPlaying && <AiOutlinePause size={32} />}
 						</button>
 						<button
-							className=' w-full flex justify-center items-center px-4 py-2  text-gray-900 focus:z-10 focus:ring-2  :text-white hover:text-white hover:bg-gray-600 focus:ring-blue-500 focus:text-white'
+							className=' w-full flex justify-center items-center px-4 py-2 focus:z-10 focus:ring-2  text-white hover:text-white hover:bg-gray-600 focus:ring-blue-500 focus:text-white'
 							onClick={() => {
 								setKey((prevKey) => prevKey + 1);
 								setIsPlaying(false);

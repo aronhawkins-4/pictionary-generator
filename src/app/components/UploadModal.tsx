@@ -51,10 +51,10 @@ export const UploadModal: React.FC<uploadModalProps> = ({ setIsOpen }) => {
 			className='fixed top-0 left-0 right-0 z-50 w-screen h-screen p-4 overflow-x-hidden overflow-y-auto md:inset-0 flex justify-center items-center bg-black/50'
 		>
 			<div className='relative w-full max-w-md max-h-full'>
-				<div className='relative bg-white rounded-lg shadow dark:bg-gray-700'>
+				<div className='relative rounded-lg shadow bg-gray-700'>
 					<button
 						type='button'
-						className='absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white'
+						className='absolute top-3 right-2.5 text-gray-400 bg-transparentrounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center hover:bg-gray-600 hover:text-white'
 						data-modal-hide='authentication-modal'
 						onClick={() => setIsOpen(false)}
 					>
@@ -76,7 +76,7 @@ export const UploadModal: React.FC<uploadModalProps> = ({ setIsOpen }) => {
 						<span className='sr-only'>Close modal</span>
 					</button>
 					<div className='px-6 py-6 lg:px-8'>
-						<h3 className='mb-4 text-xl font-medium text-gray-900 dark:text-white'>Upload new word</h3>
+						<h3 className='mb-4 text-xl font-medium text-gray-900 text-white'>Upload new word</h3>
 						<form
 							className='space-y-6'
 							onSubmit={handleSubmit(onSubmit)}
@@ -84,14 +84,14 @@ export const UploadModal: React.FC<uploadModalProps> = ({ setIsOpen }) => {
 							<div>
 								<label
 									htmlFor='word'
-									className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
+									className='block mb-2 text-sm font-medium text-white'
 								>
 									Word
 								</label>
 								<input
 									type='text'
 									id='word'
-									className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white'
+									className=' border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white'
 									placeholder='superhero'
 									spellCheck
 									required
@@ -101,7 +101,7 @@ export const UploadModal: React.FC<uploadModalProps> = ({ setIsOpen }) => {
 							<div>
 								<label
 									htmlFor='difficulty'
-									className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
+									className='block mb-2 text-sm font-medium text-white'
 								>
 									Difficulty
 								</label>
@@ -137,7 +137,7 @@ export const UploadModal: React.FC<uploadModalProps> = ({ setIsOpen }) => {
 
 							<button
 								type='submit'
-								className='w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+								className='w-full text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800'
 							>
 								Submit
 							</button>

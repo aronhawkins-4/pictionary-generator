@@ -24,12 +24,12 @@ export default function Home() {
 						<h2 className='text-2xl'>Your word is:</h2>
 
 						<div className='flex gap-2 flex-col'>
-							<div className='flex items-center p-2.5  border-b border-gray-300 text-gray-900 rounded-none focus:ring-blue-500 focus:border-blue-500  w-full  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white min-h-[54px]'>
+							<div className='flex items-center p-2.5  border-b rounded-none focus:ring-blue-500 focus:border-blue-500  w-full  border-gray-600 placeholder-gray-400text-white min-h-[54px]'>
 								{currentWord && <h2 className={`text-2xl ${isBlurred && ' blur-md'} transition-all `}>{currentWord}</h2>}
 							</div>
 							{currentWord && (
 								<button
-									className='w-min text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 min-w-[6rem]'
+									className='w-min text-white focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800 min-w-[6rem]'
 									onClick={() => setIsBlurred((current) => !current)}
 								>
 									{!isBlurred && 'Blur'} {isBlurred && 'Reveal'}

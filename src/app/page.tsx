@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { GeneratorForm } from './components/GeneratorForm';
 import { Timer } from './components/Timer';
-import { UploadModal } from './components/UploadModal';
 import { Footer } from './components/Footer';
 
 export default function Home() {

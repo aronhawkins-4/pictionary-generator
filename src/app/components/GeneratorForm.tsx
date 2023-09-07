@@ -83,6 +83,10 @@ export const GeneratorForm: React.FC<GeneratorFormProps> = ({ setCurrentWord, se
 		if (wordList.length === 0) {
 			toast.error('There are no words in this difficulty');
 		}
+		async function getWordsOnLoad() {
+			axios.get('/api/words');
+		}
+		getWordsOnLoad();
 	}, [wordList]);
 
 	return (

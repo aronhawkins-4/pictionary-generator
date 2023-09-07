@@ -12,7 +12,7 @@ export default function Home() {
 
 	return (
 		<main className='flex flex-col min-h-screen gap-8 items-center justify-center relative bg-gray-950'>
-			<div className='flex flex-col md:flex-row items-start justify-between gap-16 w-full max-w-5xl mx-auto px-8 py-24 lg:p-24'>
+			<div className='flex flex-col grow md:flex-row items-start justify-between gap-16 w-full max-w-5xl mx-auto px-8 pb-16 pt-48 lg:pb-24 lg:pt-56 lg:px-24'>
 				<div className='flex flex-col gap-8 w-full'>
 					<div className='w-full'>
 						<GeneratorForm
@@ -24,7 +24,7 @@ export default function Home() {
 						<h2 className='text-2xl'>Your word is:</h2>
 
 						<div className='flex gap-2 flex-col'>
-							<div className='flex items-center p-2.5  border-b rounded-none focus:ring-blue-500 focus:border-blue-500  w-full  border-gray-600 placeholder-gray-400text-white min-h-[54px]'>
+							<div className='flex items-center p-2.5  border-b rounded-none focus:ring-blue-500 focus:border-blue-500  w-full  border-gray-600 placeholder-gray-400 text-white min-h-[54px]'>
 								{currentWord && <h2 className={`text-2xl ${isBlurred && ' blur-md'} transition-all `}>{currentWord}</h2>}
 							</div>
 							{currentWord && (

@@ -38,7 +38,7 @@ export const RulesModal: React.FC<rulesModalProps> = ({ setIsOpen }) => {
 						<h2 className='text-2xl mb-4 border-b border-gray-200'>Pictionary Rules</h2>
 						<p>
 							One person on your team is designated to be the first person to draw a picture of whatever random Pictionary word is generated. Once they see the word, they have 5 seconds
-							to think before they begin to draw. Once they begin drawing, they have 30 seconds to try to get their team to guess the random word. If the team succeeds in guessing the
+							to think before they begin to draw. Once they begin drawing, they have 60 seconds to try to get their team to guess the random word. If the team succeeds in guessing the
 							correct word being drawn, the team gets a point, but they get zero points if they don&apos;t. Team two does the same thing, then the person drawing is switched for round
 							two. After a designated number of rounds, the team with the most points wins.
 						</p>

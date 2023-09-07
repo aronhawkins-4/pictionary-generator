@@ -12,7 +12,7 @@ export default function Home() {
 
 	return (
 		<main className='flex flex-col min-h-screen gap-8 items-center justify-center relative bg-gray-950'>
-			<div className='flex flex-col grow md:flex-row items-start justify-between gap-16 w-full max-w-5xl mx-auto px-8 pb-16 pt-48 lg:pb-24 lg:pt-56 lg:px-24'>
+			<div className='flex flex-col grow md:flex-row items-start justify-between gap-16 w-full max-w-5xl mx-auto px-8 pb-16 pt-36 lg:pb-24 lg:pt-56 lg:px-24'>
 				<div className='flex flex-col gap-8 w-full'>
 					<div className='w-full'>
 						<GeneratorForm
